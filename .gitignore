@@ -8,4 +8,6 @@
 /httpRequests/
 out
 leetcode.iml
+leetcode-practice.iml
+.DS_Store
 .idea
