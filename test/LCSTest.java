@@ -1,4 +1,6 @@
 import static org.junit.Assert.assertEquals;
+
+import longest_common_subsequence.LCS;
 import org.junit.Test;
 
 public class LCSTest {

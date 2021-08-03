@@ -1,8 +1,22 @@
+package longest_common_subsequence;
+
 import java.util.Comparator;
 import java.util.stream.Stream;
 
+/**
+ * 1143. Longest Common Subsequence
+ * Given two strings text1 and text2, return the
+ * length of their longest common subsequence.
+ * If there is no common subsequence, return 0.
+ */
 public class LCS {
 
+  /**
+   * A version with 2 strings
+   * @param text1 the first string
+   * @param text2 the second string
+   * @return the length of the longest common subsequence.
+   */
   public int lcsOf2(String text1, String text2) {
     char[] t1 = text1.toCharArray();
     char[] t2 = text2.toCharArray();
@@ -27,6 +41,13 @@ public class LCS {
     return dp[m][n];
   }
 
+  /**
+   * A version with 3 input strings
+   * @param X the first input string
+   * @param Y the second input string
+   * @param Z the third input string
+   * @return the length of the longest common subsequence
+   */
   public int lcsOf3(String X, String Y, String Z) {
     int m = X.length();
     int n = Y.length();
@@ -52,6 +73,15 @@ public class LCS {
     return dp[m][n][p];
   }
 
+  /**
+   * A version with the dp table being a 3d String array instead
+   * of a 3d int array, and return the longest common subsequence itself
+   * instead of the length.
+   * @param X the first input string
+   * @param Y the second input string
+   * @param Z the third input string
+   * @return the longest common string
+   */
   public String StringLCSOf3(String X, String Y, String Z) {
     int m = X.length();
     int n = Y.length();
